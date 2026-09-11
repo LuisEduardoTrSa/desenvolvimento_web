@@ -1,0 +1,37 @@
+/*SELETOR UNIVERSAL*/
+*{
+    margin: 2;
+    padding: 10;
+    color: rebeccapurple;
+}
+
+/*SELETOR UNIVERSAL*/
+input[type="text"]{
+    width: 200px;
+    background-color: #ccc;
+    height: 40px;
+    border: none;
+}
+input[type="email"]{
+    width: 200px;
+    background-color: #ccc;
+    height: 40px;
+    border: none;
+}
+input[type="submit"]{
+    width: 200px;
+    background-color: green;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*SELETOR UNIVERSAL*/
+.texto-principal{color: blue; text-align: center;}
+.fundo-principal{background-color: aquamarine; padding: 20px;}
+
+/*SELETOR UNIVERSAL*/
+#conteudo{
+    background-color: chartreuse;
+    padding: 20px;
+    color: blue;
+}

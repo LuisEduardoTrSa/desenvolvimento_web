@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição Do_While</title>
+</head>
+<body>
+    <script lang="javascript">
+        // Executar uma sequência de comandos por uma quantidade indeterminada de vazes utilizando uma variável de controle
+
+        // DEFINIÇÃO DE VARIÁVEIS
+        var js_contador=1;
+        var js_resposta=true;
+
+        // APLICAÇÃO DO_WHILE
+        do{
+            document.write('<p>'+js_contador+ ' Repetição de uma única linha de comando dentro de um laço de repetição: ');
+                js_contador +=1;
+                js_resposta = window.confirm('Deseja continuar?');
+        }
+        while(js_resposta==true);
+    </script>
+</body>
+</html>

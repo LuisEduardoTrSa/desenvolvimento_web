@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <label for="cNome">Nome:</label>
+    <input type="text" mome="NNome" id="nome_id" size="10" maxlength="15" placeholder="Digite aqui">
+    <label for="cEmail">E-mail:</label>
+    <input type="text" mome="NEmail" id="email_id" size="10" maxlength="15" placeholder="Digite aqui"> <br>
+    <label for="cFone">Fone:</label>
+    <input type="text" mome="NFone" id="fone_id" size="10" maxlength="15" placeholder="Digite aqui"> <br>
+    <table border="1">
+            <tr>
+                <th><h4>O que você está achando do andamento do curso até agora?</h4></th>
+                <th><h4>Avalie o curso até agora; agora</h4></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="opiniao" value="muito_bom"> Muito bom, sem comentários<br>
+                    <input type="checkbox" name="opiniao" value="bom"> Bom, sem comentários<br>
+                    <input type="checkbox" name="opiniao" value="muito"> Muito<br>
+                    <input type="checkbox" name="opiniao" value="mais_rapido"> Poderia ir mais rápido<br>
+                    <input type="checkbox" name="opiniao" value="mais_devagar"> Poderia ir mais devagar<br>
+                    <input type="checkbox" name="opiniao" value="outra"> Outra opinião. Qual?<br>
+                    <input type="checkbox" name="opiniao" value="vazio">
+                </td>
+                <td>
+                    <input type="radio" name="nota" value="10++"> 10++<br>
+                    <input type="radio" name="nota" value="10"> 10<br>
+                    <input type="radio" name="nota" value="9++"> 9++<br>
+                    <input type="radio" name="nota" value="8++"> 8++<br>
+                    <input type="radio" name="nota" value="7++"> 7++<br>
+                    <input type="radio" name="nota" value="outra"> Outra. Qual? <input type="text" name="outra_nota" size="8">
+                </td>
+            </tr>
+        </table>
+    <br>Deixe aqui seus comentários e críticas construtivas: <br>
+    <textarea name="critica" rows="5" cols="40" placeholder="Digite aqui"></textarea> <br>
+    <input type="reset" name="FNome" id="f_id" value="Limpar Campos">
+    <input type="submit" name="FEnviar" id="fEnviar_id" value="Enviar Dados">
+
+    <blockquote>Luís Eduardo Santos Trindade</blockquote>
+    <blockquote><blockquote>Ciência da Computação</blockquote></blockquote>
+    <blockquote><blockquote><blockquote>Turma B</blockquote></blockquote></blockquote>
+</body>
+</html>

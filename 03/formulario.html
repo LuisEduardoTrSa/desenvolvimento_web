@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Campo texto</h3>
+    <form mathod="post" action="mailto:luis.trindade@sempreceub.com">
+        <fieldset id="name">
+            <legend>Campo de nome</legend>
+            <label for="cNome">Qual o seu primeiro nome?</label>
+            <input type="text" mome="NNome" id="nome_id" size="10" maxlength="15" placeholder="Digite aqui">
+        </fieldset>
+
+        <hr noshade="" size="10">
+
+        <h3>Campo de Senha</h3>
+        <fieldset id="senha">
+            <legend>Campo senha</legend>
+            Informe sua senha
+            <input type="password" name="NSenha" id="senha_id" size="12" maxlength="8" placeholder="Digite a senha">
+        </fieldset>
+
+        <hr noshade="" size="10">
+
+        <h3>Botões de enviar formulário</h3>
+        nome: <input type="text"  mome="NNome" id="nome_id">
+        <br>
+        <br>
+        <input type="reset" name="NReset" id="reset_id" value="Limpar campos">
+        <input type="submit" nome="NEnviar" id="enviar_id" value="Enviar">
+        <hr noshade="" size="10">
+
+        <h3>Campo de marcar opções - chackbox</h3>
+        <p>
+            <input type="checkbox" name="NCheckbox" id="chackbox_id">Sim, eu desejo receber o boletim de notícias.
+        </p>
+        <p>
+            <input type="checkbox" name="TCheckbox" id="chackbox_id2">Sim, eu gostaria de receber mais informações turisticas.
+        </p>
+        <input type="reset" name="FNome" id="f_id" value="Limpar">
+        <input type="submit" name="FEnviar" id="fEnviar_id" value="Enviar Consulta">
+
+        <hr noshade="" size="10">
+
+        <h3>Campos de opção - Radio</h3>
+        Suas preferências de viagem:
+        <dl>
+            <dd>Classe do Bilhete:
+                <input type="radio" name="classe" value="eco">Econômica 
+                <input type="radio" name="classe" value="exe">Executiva 
+                <input type="radio" name="classe" value="prim">Primeira
+            </dd>
+            <dd>Localização:
+                <input type="radio" name="local" value="frente">Área Fumante
+                <input type="radio" name="local" value="tras">Área Não Fumante
+            </dd>
+        </dl>
+
+        <hr noshade="" size="10">
+
+        <h3>Campo de texto - textarea</h3>
+        Por favor, escreva aqui sugestões, dúvidas ou críticas: <br>
+        <textarea name="critica" rows="5" cols="40" placeholder="Digite suas reclamações aqui"></textarea>
+
+        <hr noshade="" size="10">
+
+        <h3>Menu com opções - select</h3>
+        <select name="lugares">
+            <option>Fortaleza</option>
+            <option>Rio de Janeiro</option>
+            <option selected="">São Paulo</option>
+            <option>Maceió</option>
+        </select>
+
+        <hr noshade="" size="10">
+
+        <h3>Menu com opções - múltipla escolha</h3>
+        Onde você pretende fazer turismo? <br>
+        <select multiple="" size="5" name="lugares">
+            <option>Fortaleza</option>
+            <option>Rio de Janeiro</option>
+            <option selected="">São Paulo</option>
+            <option>Maceió</option>
+        </select>
+
+        <hr noshade="" size="10">
+
+        <h3>Caixa de numeração</h3>
+        <input type="number" name="numero1" id="numero1_id" min="1" max="10">
+    </form>
+</body>
+</html>

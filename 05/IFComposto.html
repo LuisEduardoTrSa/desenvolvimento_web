@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Composto</title>
+</head>
+<body>
+    <script language="javascript">
+        // OBJETIVO: Ler dois valores, independentemente da ordem em que forem digitados, apresentá-los em ordem crescente.
+
+        // DEFINIÇÃO DAS VARIÁVEIS
+        var js_n1;
+        var js_n2;
+        var js_n3;
+
+        // ENTRADA DE DADOS
+        js_n1 = parseInt (window.prompt('Informe o valor do primeiro número: ', '00'));
+        js_n2 = parseInt (window.prompt('Informe o valor do segundo número: ', '00'));
+
+        // SAÍDE DE DADOS SEM CLASSIFICAÇÃO
+        document.write('Número 1 digitado = ' + js_n1);
+        document.write('<br>Número 2 digitado = ' + js_n2);
+
+        // SAÍDA DE DADOS COM CLASSIFICAÇÃO - Usando Condicional Composto
+        if(js_n1 < js_n2){
+            document.write("<p><b>Classificação em ordem Crescente: </b>" +js_n1+ ' e ' +js_n2);            
+        }
+        else{document.write("<p><b>Classificação em ordem Crescente: </b>" +js_n2+ ' e ' +js_n1);}
+    </script>
+</body>
+</html>

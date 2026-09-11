@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação do Usuário</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            margin: 20px;
+            color: #000000;
+        }
+        form {
+            max-width: 950px;
+        }
+        fieldset {
+            border: 1px solid #767676;
+            margin-bottom: 12px;
+            padding: 10px 15px;
+            background-color: #fff;
+        }
+        legend {
+            font-size: 1rem;
+            padding: 0 4px;
+        }
+        .form-row {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .form-row label {
+            margin-right: 6px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            border: 1px solid #767676;
+            padding: 2px 4px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder,
+        input[type="email"]::placeholder {
+            color: #757575;
+            font-style: normal;
+        }
+        .input-short {
+            width: 70px;
+        }
+        .input-medium {
+            width: 130px;
+        }
+        .input-long {
+            width: 180px;
+        }
+        .sexo-fieldset {
+            border: 1px solid #767676;
+            margin: 8px 0 12px 0;
+            padding: 6px 10px 8px 10px;
+            width: calc(100% - 24px);
+        }
+        .sexo-fieldset legend {
+            font-size: 0.95rem;
+        }
+        .sexo-option {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+        }
+        .sexo-option input {
+            margin-right: 5px;
+        }
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .range-container input[type="range"] {
+            width: 120px;
+        }
+        .textarea-row {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .textarea-row label {
+            margin-right: 6px;
+        }
+        textarea {
+            width: 250px;
+            height: 60px;
+            border: 1px solid #767676;
+            resize: both;
+            font-family: inherit;
+        }
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .checkbox-row input {
+            margin-right: 6px;
+        }
+        input[type="color"] {
+            width: 32px;
+            height: 22px;
+            padding: 0;
+            border: 1px solid #767676;
+            background: none;
+            cursor: pointer;
+        }
+        .btn-enviar {
+            background-color: #f0f0f0;
+            border: 1px solid #767676;
+            padding: 2px 12px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .btn-enviar:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Identificação do Usuário</legend>
+            
+            <div class="form-row">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="input-long" placeholder="Nome completo">
+            </div>
+
+            <div class="form-row">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="input-medium" placeholder="Digite a senha">
+            </div>
+
+            <div class="form-row">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="input-long" placeholder="Digite seu e-mail">
+            </div>
+
+            <fieldset class="sexo-fieldset">
+                <legend>Sexo</legend>
+                <div class="sexo-option">
+                    <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="sexo-option">
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="form-row">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" class="input-long" placeholder="Rua, Av,Bairro">
+            </div>
+
+            <div class="form-row">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" class="input-short">
+            </div>
+
+            <div class="form-row">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="RJ" selected>Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" class="input-long" placeholder="Sua cidade">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem do Usuário</legend>
+
+            <div class="form-row range-container">
+                <label for="urgencia">Grau de urgência:</label>
+                <span>Mín</span>
+                <input type="range" id="urgencia" name="urgencia" min="0" max="100" value="25">
+                <span>Max</span>
+            </div>
+
+            <div class="textarea-row">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Quero um produto:</legend>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="adquirir" name="adquirir">
+                <label for="adquirir">Gostaria de adquirir um produto quando disponível.</label>
+            </div>
+
+            <div class="form-row">
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor" value="#0000ff">
+            </div>
+
+            <div class="form-row">
+                <label for="quantidade">Quantidade:</label>
+                <input type="text" id="quantidade" name="quantidade" class="input-short">
+            </div>
+
+            <div class="form-row">
+                <label for="preco">Preço Total R$:</label>
+                <input type="text" id="preco" name="preco" class="input-medium">
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+
+    </form>
+    <blockquote>Luís Eduardo Santos Trindade</blockquote>
+    <blockquote><blockquote>Ciência da Computação</blockquote></blockquote>
+    <blockquote><blockquote><blockquote>Turma B</blockquote></blockquote></blockquote>
+</body>
+</html>
